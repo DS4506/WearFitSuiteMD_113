@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		47960F1E2EB99CEC0064910A /* WearFitWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 47960F142EB99CEB0064910A /* WearFitWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47960F1C2EB99CEC0064910A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47960EFA2EB99BF80064910A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47960F132EB99CEB0064910A;
+			remoteInfo = "WearFitWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47960F222EB99CEC0064910A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				47960F1E2EB99CEC0064910A /* WearFitWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		47960F022EB99BF80064910A /* WearFitSuite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WearFitSuite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47960F142EB99CEB0064910A /* WearFitWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WearFitWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +45,22 @@
 			path = WearFitSuite;
 			sourceTree = "<group>";
 		};
+		47960F152EB99CEB0064910A /* WearFitWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WearFitWatch Watch App";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		47960EFF2EB99BF80064910A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47960F112EB99CEB0064910A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				47960F042EB99BF80064910A /* WearFitSuite */,
+				47960F152EB99CEB0064910A /* WearFitWatch Watch App */,
 				47960F032EB99BF80064910A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				47960F022EB99BF80064910A /* WearFitSuite.app */,
+				47960F142EB99CEB0064910A /* WearFitWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +98,12 @@
 				47960EFE2EB99BF80064910A /* Sources */,
 				47960EFF2EB99BF80064910A /* Frameworks */,
 				47960F002EB99BF80064910A /* Resources */,
+				47960F222EB99CEC0064910A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				47960F1D2EB99CEC0064910A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				47960F042EB99BF80064910A /* WearFitSuite */,
@@ -68,6 +113,28 @@
 			);
 			productName = WearFitSuite;
 			productReference = 47960F022EB99BF80064910A /* WearFitSuite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47960F132EB99CEB0064910A /* WearFitWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47960F1F2EB99CEC0064910A /* Build configuration list for PBXNativeTarget "WearFitWatch Watch App" */;
+			buildPhases = (
+				47960F102EB99CEB0064910A /* Sources */,
+				47960F112EB99CEB0064910A /* Frameworks */,
+				47960F122EB99CEB0064910A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				47960F152EB99CEB0064910A /* WearFitWatch Watch App */,
+			);
+			name = "WearFitWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WearFitWatch Watch App";
+			productReference = 47960F142EB99CEB0064910A /* WearFitWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +148,9 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					47960F012EB99BF80064910A = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					47960F132EB99CEB0064910A = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -100,12 +170,20 @@
 			projectRoot = "";
 			targets = (
 				47960F012EB99BF80064910A /* WearFitSuite */,
+				47960F132EB99CEB0064910A /* WearFitWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		47960F002EB99BF80064910A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47960F122EB99CEB0064910A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +200,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47960F102EB99CEB0064910A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47960F1D2EB99CEC0064910A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47960F132EB99CEB0064910A /* WearFitWatch Watch App */;
+			targetProxy = 47960F1C2EB99CEC0064910A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		47960F0B2EB99BF80064910A /* Debug */ = {
@@ -310,6 +403,72 @@
 			};
 			name = Release;
 		};
+		47960F202EB99CEC0064910A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3PF3W86P6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WearFitWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SDGKU.com.WearFitSuite;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SDGKU.com.WearFitSuite.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		47960F212EB99CEC0064910A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3PF3W86P6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WearFitWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SDGKU.com.WearFitSuite;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SDGKU.com.WearFitSuite.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +486,15 @@
 			buildConfigurations = (
 				47960F0E2EB99BF80064910A /* Debug */,
 				47960F0F2EB99BF80064910A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47960F1F2EB99CEC0064910A /* Build configuration list for PBXNativeTarget "WearFitWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47960F202EB99CEC0064910A /* Debug */,
+				47960F212EB99CEC0064910A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
